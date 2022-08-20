@@ -1,0 +1,16 @@
+object Versions {
+    const val jvm = "1.6.10"
+    const val ksp = "1.7.10-1.0.6"
+    const val coreKtx = "1.7.0"
+    const val appCompat = "1.3.0"
+    const val constraintLayout = "2.0.4"
+    const val koin = "3.2.0"
+    const val junit = "4.13.2"
+    const val testExt = "1.1.3"
+    const val testEspresso = "3.4.0"
+    const val material = "1.4.0"
+    const val mockk = "1.12.5"
+    const val timber = "5.0.1"
+    const val moshi = "1.13.0"
+    const val glide = "4.13.2"
+}
