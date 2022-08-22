@@ -1,7 +1,6 @@
 plugins {
     id("com.android.application")
     kotlin("android")
-    kotlin("kapt")
 }
 
 android {
@@ -17,6 +16,10 @@ android {
         testInstrumentationRunner = ConfigData.testInstrumentationRunner
     }
 
+    buildFeatures {
+        dataBinding = true
+    }
+
     buildTypes {
         getByName("release") {
             isMinifyEnabled = false
@@ -30,13 +33,13 @@ android {
 
 dependencies {
     implementation(Deps.AndroidX.coreKtx)
-    implementation(Deps.AndroidX.appCompat)
-    implementation(Deps.Material.material)
     implementation(Deps.AndroidX.constraintLayout)
     implementation(Deps.Koin.koin)
     implementation(Deps.Timber.timber)
-    implementation(Deps.Moshi.moshi)
-    implementation(Deps.Glide.glide)
+
+    implementation(project(":design-system"))
+    implementation(project(":feature:pokedex:impl"))
+    implementation(project(":feature:pokedex:publ"))
 
     testImplementation(Deps.Junit.junit)
     testImplementation(Deps.Koin.kointJunit)
@@ -44,7 +47,4 @@ dependencies {
     testImplementation(Deps.Mockk.mockk)
     androidTestImplementation(Deps.AndroidX.testExt)
     androidTestImplementation(Deps.AndroidX.testEspresso)
-
-    kapt(Deps.Moshi.codeGen)
-    kapt(Deps.Glide.compiler)
 }

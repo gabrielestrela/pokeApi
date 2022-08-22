@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/pokedex_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/poke_ball_off_white">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/PoppinsBold.H1.Darker"
+            android:layout_marginTop="@dimen/margin_48"
+            android:layout_marginStart="@dimen/margin_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/pokedex_title"
+            tools:text="Pokedex"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/pokeball_water_mark"
+            android:layout_width="@dimen/size_128"
+            android:layout_height="@dimen/size_128"
+            android:src="@drawable/pokeball_water_mark"
+            android:tint="@color/poke_ball_white"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/PoppinsRegular.Small.Lighter"
+            android:layout_marginTop="@dimen/margin_12"
+            android:layout_marginEnd="@dimen/margin_24"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            app:layout_constraintStart_toStartOf="@id/title"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/pokedex_description"
+            tools:text="@string/pokedex_description"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/pokemon_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_12"
+            android:layout_marginEnd="@dimen/margin_24"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="@integer/spanCount"
+            app:layout_constraintTop_toBottomOf="@id/description"
+            app:layout_constraintStart_toStartOf="@id/description"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:listitem="@layout/pokedex_pokemon_list_item"
+            tools:itemCount="8"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

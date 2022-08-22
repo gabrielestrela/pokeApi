@@ -17,5 +17,8 @@ dependencyResolutionManagement {
 
 rootProject.name = "pokeApi"
 include(
-    ":app"
+    ":app",
+    ":design-system",
+    ":feature:pokedex:impl",
+    ":feature:pokedex:publ"
 )

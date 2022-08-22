@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="PoppinsRegular">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="PoppinsRegular.H1">
+        <item name="android:textSize">@dimen/font_32</item>
+    </style>
+
+    <style name="PoppinsRegular.H4">
+        <item name="android:textSize">@dimen/font_18</item>
+    </style>
+
+    <style name="PoppinsRegular.Small">
+        <item name="android:textSize">@dimen/font_16</item>
+    </style>
+
+    <style name="PoppinsRegular.Smaller">
+        <item name="android:textSize">@dimen/font_12</item>
+    </style>
+
+    <style name="PoppinsRegular.Little">
+        <item name="android:textSize">@dimen/font_8</item>
+    </style>
+
+    <style name="PoppinsRegular.H1.Darker">
+        <item name="android:textColor">@color/poke_ball_gray_300</item>
+    </style>
+
+    <style name="PoppinsRegular.H4.Lighter">
+        <item name="android:textColor">@color/poke_ball_gray_100</item>
+    </style>
+
+    <style name="PoppinsRegular.Small.Lighter">
+        <item name="android:textColor">@color/poke_ball_gray_100</item>
+    </style>
+
+    <style name="PoppinsRegular.Smaller.Lighter">
+        <item name="android:textColor">@color/poke_ball_gray_100</item>
+    </style>
+
+    <style name="PoppinsBold">
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="PoppinsBold.H1">
+        <item name="android:textSize">@dimen/font_32</item>
+    </style>
+
+    <style name="PoppinsBold.H1.Darker">
+        <item name="android:textColor">@color/poke_ball_gray_300</item>
+    </style>
+
+    <style name="PoppinsBold.Small">
+        <item name="android:textSize">@dimen/font_16</item>
+    </style>
+
+    <style name="PoppinsBold.Smaller">
+        <item name="android:textSize">@dimen/font_12</item>
+    </style>
+
+</resources>

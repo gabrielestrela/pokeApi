@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/grass_item_container">
+        <shape android:shape="rectangle">
+            <size
+                android:width="70dp"
+                android:height="50dp"/>
+            <solid android:color="@color/bug_type"/>
+            <corners android:radius="@dimen/radius_10"/>
+        </shape>
+    </item>
+    <item android:id="@+id/pokeball_water_mark_container"
+        android:drawable="@drawable/pokeball_water_mark"
+        android:width="@dimen/size_128"
+        android:height="@dimen/size_128"
+        android:gravity="bottom|right">
+    </item>
+</layer-list>
