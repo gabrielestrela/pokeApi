@@ -1,4 +1,8 @@
 object Deps {
+    object Kotlin {
+        val kotlin by lazy { "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${Versions.kotlin}" }
+    }
+
     object Koin {
         val koin by lazy { "io.insert-koin:koin-android:${Versions.koin}" }
         val koinTest by lazy { "io.insert-koin:koin-test:${Versions.koin}" }

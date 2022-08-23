@@ -27,9 +27,14 @@ android {
             )
         }
     }
+
+    kapt {
+        correctErrorTypes = true
+    }
 }
 
 dependencies {
+    implementation(Deps.Kotlin.kotlin)
     implementation(Deps.AndroidX.coreKtx)
     implementation(Deps.AndroidX.appCompat)
     implementation(Deps.Material.material)
@@ -40,6 +45,7 @@ dependencies {
     implementation(Deps.Glide.glide)
 
     implementation(project(":design-system"))
+    implementation(project(":common-kotlin"))
 
     testImplementation(Deps.Junit.junit)
     testImplementation(Deps.Koin.kointJunit)
@@ -48,6 +54,4 @@ dependencies {
     androidTestImplementation(Deps.AndroidX.testExt)
     androidTestImplementation(Deps.AndroidX.testEspresso)
 
-    kapt(Deps.Moshi.codeGen)
-    kapt(Deps.Glide.compiler)
 }

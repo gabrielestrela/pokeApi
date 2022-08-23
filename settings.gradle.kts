@@ -20,5 +20,6 @@ include(
     ":app",
     ":design-system",
     ":feature:pokedex:impl",
-    ":feature:pokedex:publ"
+    ":feature:pokedex:publ",
+    ":common-kotlin"
 )
