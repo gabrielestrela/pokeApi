@@ -19,7 +19,8 @@ rootProject.name = "pokeApi"
 include(
     ":app",
     ":design-system",
+    ":common-kotlin",
+    ":common-android",
     ":feature:pokedex:impl",
     ":feature:pokedex:publ",
-    ":common-kotlin"
 )

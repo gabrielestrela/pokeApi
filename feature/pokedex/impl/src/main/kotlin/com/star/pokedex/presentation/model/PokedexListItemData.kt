@@ -1,5 +1,9 @@
 package com.star.pokedex.presentation.model
 
+import androidx.annotation.ColorRes
+import androidx.annotation.DrawableRes
+import com.star.pokedex.domain.model.PokemonType
+
 data class PokedexListItemData(
     @DrawableRes val backgroundDrawable: Int = 0,
     val pokedexNumberUi: PokedexNumberUiData = PokedexNumberUiData(),
@@ -18,4 +22,3 @@ data class PokemonTypeUiData(
     @DrawableRes val chipBackground: Int = 0,
     val isVisible: Boolean = false
 )
-
