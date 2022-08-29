@@ -26,6 +26,7 @@ android {
 
 dependencies {
     implementation(Deps.AndroidX.coreKtx)
+    implementation(Deps.Kotlin.coroutines)
     implementation(Deps.AndroidX.appCompat)
     implementation(Deps.Material.material)
     implementation(Deps.Timber.timber)

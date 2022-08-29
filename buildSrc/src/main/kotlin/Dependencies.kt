@@ -1,6 +1,9 @@
 object Deps {
     object Kotlin {
         val kotlin by lazy { "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${Versions.kotlin}" }
+        val coroutines by lazy {
+            "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutines}"
+        }
     }
 
     object Koin {
