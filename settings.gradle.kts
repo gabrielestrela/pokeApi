@@ -21,6 +21,7 @@ include(
     ":design-system",
     ":common-kotlin",
     ":common-android",
+    ":network",
     ":feature:pokedex:impl",
     ":feature:pokedex:publ",
 )

@@ -1,7 +1,7 @@
 package com.star.pokeapi
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.star.pokeapi.databinding.ActivityMainBinding
 

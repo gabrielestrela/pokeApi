@@ -1,7 +1,7 @@
 plugins {
-    id("com.android.library")
-    kotlin("android")
-    kotlin("kapt")
+    androidLibrary(false)
+    kotlinAndroid()
+    kotlinKapt()
 }
 
 android {
@@ -45,6 +45,7 @@ dependencies {
     implementation(Deps.Glide.glide)
 
     implementation(project(":design-system"))
+    implementation(project(":network"))
     implementation(project(":common-kotlin"))
 
     testImplementation(Deps.Junit.junit)

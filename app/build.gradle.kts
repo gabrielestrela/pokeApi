@@ -1,6 +1,7 @@
 plugins {
-    id("com.android.application")
-    kotlin("android")
+    androidApp(false)
+    kotlinAndroid()
+    ktLint()
 }
 
 android {
@@ -35,8 +36,10 @@ dependencies {
     implementation(Deps.AndroidX.coreKtx)
     implementation(Deps.AndroidX.constraintLayout)
     implementation(Deps.Koin.koin)
+    implementation(Deps.Koin.core)
     implementation(Deps.Timber.timber)
 
+    implementation(project(":network"))
     implementation(project(":design-system"))
     implementation(project(":feature:pokedex:impl"))
     implementation(project(":feature:pokedex:publ"))

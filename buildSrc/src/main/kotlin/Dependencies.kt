@@ -1,13 +1,19 @@
+import org.gradle.api.artifacts.dsl.DependencyHandler
+
 object Deps {
     object Kotlin {
         val kotlin by lazy { "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${Versions.kotlin}" }
         val coroutines by lazy {
             "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutines}"
         }
+        val coroutinesCore by lazy {
+            "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutines}"
+        }
     }
 
     object Koin {
         val koin by lazy { "io.insert-koin:koin-android:${Versions.koin}" }
+        val core by lazy { "io.insert-koin:koin-core:${Versions.koin}" }
         val koinTest by lazy { "io.insert-koin:koin-test:${Versions.koin}" }
         val kointJunit by lazy { "io.insert-koin:koin-test-junit4:${Versions.koin}" }
     }
@@ -50,5 +56,16 @@ object Deps {
 
     object Ksp {
         val ksp by lazy { "com.google.devtools.ksp:symbol-processing-api:${Versions.ksp}" }
+    }
+
+    object Retrofit {
+        val retrofit by lazy { "com.squareup.retrofit2:retrofit:${Versions.retrofit}" }
+        val moshiConverter by lazy { "com.squareup.retrofit2:converter-moshi:${Versions.retrofit}" }
+    }
+
+    object OkHttp3 {
+        val loggerInterceptor by lazy {
+            "com.squareup.okhttp3:logging-interceptor:${Versions.okhttp3}"
+        }
     }
 }

@@ -1,6 +1,6 @@
 plugins {
-    id("com.android.library")
-    kotlin("android")
+    androidLibrary(false)
+    kotlinAndroid()
 }
 
 android {
