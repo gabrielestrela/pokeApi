@@ -33,17 +33,19 @@ android {
 }
 
 dependencies {
-    implementation(Deps.AndroidX.coreKtx)
-    implementation(Deps.AndroidX.constraintLayout)
-    implementation(Deps.Koin.koin)
-    implementation(Deps.Koin.core)
-    implementation(Deps.Timber.timber)
-
     implementation(project(":network"))
     implementation(project(":design-system"))
     implementation(project(":feature:pokedex:impl"))
     implementation(project(":feature:pokedex:publ"))
     implementation(project(":common-kotlin"))
+    implementation(project(":common-android"))
+
+    implementation(Deps.AndroidX.coreKtx)
+    implementation(Deps.AndroidX.appCompat)
+    implementation(Deps.AndroidX.constraintLayout)
+    implementation(Deps.Koin.koin)
+    implementation(Deps.Koin.core)
+    implementation(Deps.Timber.timber)
 
     testImplementation(Deps.Junit.junit)
     testImplementation(Deps.Koin.kointJunit)

@@ -19,15 +19,15 @@ abstract class ViewModel<VS: State, VP: ViewProcedure, SE: SideEffect>(
     val sideEffect: SingleLiveEvent<SE> = _sideEffect.viewSideEffect
 
     protected fun setState(
-        transform: (VS) -> VS,
-        suspend: Boolean = false
+        suspend: Boolean = false,
+        transform: (VS) -> VS
     ) {
         _viewState.setState(transform = transform, suspend = suspend)
     }
 
     protected fun setSideEffect(
-        sideEffect: () -> SE,
-        suspend: Boolean = false
+        suspend: Boolean = false,
+        sideEffect: () -> SE
     ) {
         _sideEffect.setSideEffect(sideEffect = sideEffect, suspend = suspend)
     }

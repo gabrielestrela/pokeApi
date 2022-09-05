@@ -21,4 +21,5 @@ object Versions {
     const val glide = "4.13.2"
     const val retrofit = "2.9.0"
     const val okhttp3 = "4.10.0"
+    const val dataBinding = "7.2.2"
 }

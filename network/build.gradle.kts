@@ -6,9 +6,7 @@ plugins {
 dependencies {
     implementation(project(":common-kotlin"))
 
-    implementation(Deps.Koin.koin)
     implementation(Deps.Koin.core)
-    implementation(Deps.Timber.timber)
     implementation(Deps.Kotlin.coroutines)
     implementation(Deps.Kotlin.coroutinesCore)
     implementation(Deps.Moshi.moshi)

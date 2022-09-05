@@ -43,10 +43,12 @@ dependencies {
     implementation(Deps.Timber.timber)
     implementation(Deps.Moshi.moshi)
     implementation(Deps.Glide.glide)
+    implementation(Deps.Retrofit.retrofit)
 
     implementation(project(":design-system"))
     implementation(project(":network"))
     implementation(project(":common-kotlin"))
+    implementation(project(":common-android"))
 
     testImplementation(Deps.Junit.junit)
     testImplementation(Deps.Koin.kointJunit)
@@ -54,5 +56,4 @@ dependencies {
     testImplementation(Deps.Mockk.mockk)
     androidTestImplementation(Deps.AndroidX.testExt)
     androidTestImplementation(Deps.AndroidX.testEspresso)
-
 }

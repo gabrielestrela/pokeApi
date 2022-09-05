@@ -1,5 +1,3 @@
-import org.gradle.api.artifacts.dsl.DependencyHandler
-
 object Deps {
     object Kotlin {
         val kotlin by lazy { "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${Versions.kotlin}" }
@@ -24,6 +22,7 @@ object Deps {
         val constraintLayout by lazy {
             "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
         }
+        val dataBinding by lazy { "androidx.databinding:databinding-common:${Versions.dataBinding}" }
         val testExt by lazy { "androidx.test.ext:junit:${Versions.testExt}" }
         val testEspresso by lazy { "androidx.test.espresso:espresso-core:${Versions.testEspresso}" }
     }
@@ -52,6 +51,7 @@ object Deps {
     object Glide {
         val glide by lazy { "com.github.bumptech.glide:glide:${Versions.glide}" }
         val compiler by lazy { "com.github.bumptech.glide:compiler:${Versions.glide}" }
+        val okhttp3 by lazy { "com.github.bumptech.glide:okhttp3-integration:${Versions.glide}" }
     }
 
     object Ksp {

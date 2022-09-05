@@ -1,6 +1,7 @@
 package com.star.pokeapi.app
 
 import android.app.Application
+import com.star.common_android.resource.di.resourceProviderModule
 import com.star.network.di.networkBaseModule
 import com.star.pokeapi.tools.runIfDebug
 import org.koin.android.ext.koin.androidContext
@@ -28,5 +29,6 @@ class PokeApiApp : Application() {
 
     private fun getAppModules(): List<Module> = listOf(
         networkBaseModule,
+        resourceProviderModule
     )
 }

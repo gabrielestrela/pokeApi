@@ -9,7 +9,7 @@ class ViewSideEffect<SE: SideEffect> {
     private val _viewSideEffect: SingleLiveEvent<SE> = getSideEffect()
     val viewSideEffect: SingleLiveEvent<SE> = _viewSideEffect
 
-    fun setSideEffect(sideEffect: () -> SE, suspend: Boolean = false) {
+    fun setSideEffect( suspend: Boolean = false, sideEffect: () -> SE) {
         if (suspend) _viewSideEffect.postValue(sideEffect())
         else _viewSideEffect.value = sideEffect()
     }

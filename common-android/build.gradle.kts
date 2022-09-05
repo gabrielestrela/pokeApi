@@ -26,9 +26,12 @@ android {
 
 dependencies {
     implementation(Deps.AndroidX.coreKtx)
-    implementation(Deps.Kotlin.coroutines)
     implementation(Deps.AndroidX.appCompat)
+    implementation(Deps.AndroidX.dataBinding)
+    implementation(Deps.Kotlin.coroutines)
     implementation(Deps.Material.material)
+    implementation(Deps.Koin.koin)
+    implementation(Deps.Koin.core)
     implementation(Deps.Timber.timber)
 
     testImplementation(Deps.Junit.junit)
