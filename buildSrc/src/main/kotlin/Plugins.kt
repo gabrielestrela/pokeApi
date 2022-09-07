@@ -30,5 +30,7 @@ fun PluginDependenciesSpec.kotlin(): PluginDependencySpec = id(PluginConfig.plug
 
 fun PluginDependenciesSpec.kotlinKapt(): PluginDependencySpec = kotlin(PluginConfig.kapt)
 
+fun PluginDependenciesSpec.parcelize(): PluginDependencySpec = id(PluginConfig.parcelize)
+
 fun PluginDependenciesSpec.ktLint(includeVersion: Boolean = true): PluginDependencySpec =
     id(PluginConfig.ktLint).also { if (includeVersion) it.version(Versions.ktLint) }

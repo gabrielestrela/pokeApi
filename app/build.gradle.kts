@@ -33,6 +33,7 @@ android {
 }
 
 dependencies {
+    implementation(project(":navigation"))
     implementation(project(":network"))
     implementation(project(":design-system"))
     implementation(project(":feature:pokedex:impl"))

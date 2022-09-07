@@ -7,8 +7,9 @@ import com.star.pokedex.data.mapper.PokemonResponseToDomainData
 import com.star.pokedex.domain.model.PokedexListItemData
 
 class AppPokedexRepository(
-    val remoteDataSource: PokedexDataSource,
-    val responseToDomainData: PokemonResponseToDomainData
+    private val remoteDataSource: PokedexDataSource,
+    private val localDataSource: PokedexDataSource,
+    private val responseToDomainData: PokemonResponseToDomainData
 ) : PokedexRepository {
     override suspend fun getPokemonData(pokemonId: Int): Result<ErrorData, PokedexListItemData> =
         when (val result = remoteDataSource.fetchPokemonData(pokemonId)) {

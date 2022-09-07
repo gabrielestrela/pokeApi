@@ -29,6 +29,8 @@ abstract class BaseCache<K, V>(
         cacheSource[key] = cacheSource.createCacheData(value)
     }
 
+    override fun get(key: K): CacheData<out V>? = cacheSource[key]
+
     override fun getWithPolicies(key: K): V? {
         val cachedData = get(key)
         return if (cachedData != null  && isValidCache(cachedData)) {

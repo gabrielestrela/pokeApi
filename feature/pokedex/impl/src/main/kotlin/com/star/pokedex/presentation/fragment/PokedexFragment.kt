@@ -7,11 +7,12 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.LifecycleObserver
 import com.star.common_android.koin.DependencyHandlerObserver
+import com.star.pokedex.di.pokedexModule
 import com.star.pokedex.impl.databinding.FragmentPokedexBinding
 
 class PokedexFragment :
     Fragment(),
-    LifecycleObserver by DependencyHandlerObserver(listOf()) {
+    LifecycleObserver by DependencyHandlerObserver(listOf(pokedexModule)) {
 
     private lateinit var binding: FragmentPokedexBinding
 

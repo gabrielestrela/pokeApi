@@ -22,6 +22,7 @@ include(
     ":common-kotlin",
     ":common-android",
     ":network",
+    ":navigation",
     ":feature:pokedex:impl",
     ":feature:pokedex:publ",
 )

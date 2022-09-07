@@ -4,6 +4,8 @@ import android.app.Application
 import com.star.common_android.resource.di.resourceProviderModule
 import com.star.network.di.networkBaseModule
 import com.star.pokeapi.tools.runIfDebug
+import com.star.pokedex.di.pokedexModule
+import com.star.pokedex.di.pokedexNavigationModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 import org.koin.core.module.Module
@@ -29,6 +31,8 @@ class PokeApiApp : Application() {
 
     private fun getAppModules(): List<Module> = listOf(
         networkBaseModule,
-        resourceProviderModule
+        resourceProviderModule,
+        pokedexModule,
+        pokedexNavigationModule
     )
 }

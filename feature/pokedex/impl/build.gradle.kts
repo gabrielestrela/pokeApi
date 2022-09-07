@@ -47,6 +47,7 @@ dependencies {
 
     implementation(project(":design-system"))
     implementation(project(":network"))
+    implementation(project(":navigation"))
     implementation(project(":common-kotlin"))
     implementation(project(":common-android"))
 

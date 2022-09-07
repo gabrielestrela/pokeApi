@@ -22,4 +22,5 @@ object Versions {
     const val retrofit = "2.9.0"
     const val okhttp3 = "4.10.0"
     const val dataBinding = "7.2.2"
+    const val fragmentKtx = "1.5.2"
 }

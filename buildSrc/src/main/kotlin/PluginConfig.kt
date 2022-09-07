@@ -6,4 +6,5 @@ object PluginConfig {
     val androidLibrary by lazy { "com.android.library" }
     val kapt by lazy { "kapt" }
     val ktLint by lazy { "org.jlleitschuh.gradle.ktlint" }
+    val parcelize by lazy { "kotlin-parcelize" }
 }

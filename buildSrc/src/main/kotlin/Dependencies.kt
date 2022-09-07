@@ -22,7 +22,12 @@ object Deps {
         val constraintLayout by lazy {
             "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
         }
-        val dataBinding by lazy { "androidx.databinding:databinding-common:${Versions.dataBinding}" }
+        val dataBinding by lazy {
+            "androidx.databinding:databinding-common:${Versions.dataBinding}"
+        }
+        val fragmentKtx by lazy {
+            "androidx.fragment:fragment-ktx:${Versions.fragmentKtx}"
+        }
         val testExt by lazy { "androidx.test.ext:junit:${Versions.testExt}" }
         val testEspresso by lazy { "androidx.test.espresso:espresso-core:${Versions.testEspresso}" }
     }

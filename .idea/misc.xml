@@ -3,45 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/gabri/Projects/Personal/Android/pokeApi/app/src/main/res/layout/activity_main.xml" value="0.29257246376811596" />
-        <entry key="..\:/Users/gabri/Projects/Personal/Android/pokeApi/design-system/src/main/res/drawable/pokeball_water_mark.xml" value="0.1" />
-        <entry key="..\:/Users/gabri/Projects/Personal/Android/pokeApi/design-system/src/main/res/font/poppins.xml" value="0.4010416666666667" />
-        <entry key="..\:/Users/gabri/Projects/Personal/Android/pokeApi/feature/pokedex/impl/src/main/res/drawable/bug_chip_bg.xml" value="0.2135" />
-        <entry key="..\:/Users/gabri/Projects/Personal/Android/pokeApi/feature/pokedex/impl/src/main/res/drawable/bug_type_item_bg.xml" value="0.1" />
-        <entry key="..\:/Users/gabri/Projects/Personal/Android/pokeApi/feature/pokedex/impl/src/main/res/drawable/dark_type_item_bg.xml" value="0.1" />
-        <entry key="..\:/Users/gabri/Projects/Personal/Android/pokeApi/feature/pokedex/impl/src/main/res/drawable/dragon_type_item_bg.xml" value="0.1" />
-        <entry key="..\:/Users/gabri/Projects/Personal/Android/pokeApi/feature/pokedex/impl/src/main/res/drawable/electric_chip_bg.xml" value="0.2135" />
-        <entry key="..\:/Users/gabri/Projects/Personal/Android/pokeApi/feature/pokedex/impl/src/main/res/drawable/electric_type_item_bg.xml" value="0.1" />
-        <entry key="..\:/Users/gabri/Projects/Personal/Android/pokeApi/feature/pokedex/impl/src/main/res/drawable/fairy_type_item_bg.xml" value="0.1" />
-        <entry key="..\:/Users/gabri/Projects/Personal/Android/pokeApi/feature/pokedex/impl/src/main/res/drawable/fighter_type.xml" value="0.274" />
-        <entry key="..\:/Users/gabri/Projects/Personal/Android/pokeApi/feature/pokedex/impl/src/main/res/drawable/fire_chip_bg.xml" value="0.2135" />
-        <entry key="..\:/Users/gabri/Projects/Personal/Android/pokeApi/feature/pokedex/impl/src/main/res/drawable/fire_type_item_bg.xml" value="0.274" />
-        <entry key="..\:/Users/gabri/Projects/Personal/Android/pokeApi/feature/pokedex/impl/src/main/res/drawable/flying_chip_bg.xml" value="0.2135" />
-        <entry key="..\:/Users/gabri/Projects/Personal/Android/pokeApi/feature/pokedex/impl/src/main/res/drawable/flying_type_item_bg.xml" value="0.274" />
-        <entry key="..\:/Users/gabri/Projects/Personal/Android/pokeApi/feature/pokedex/impl/src/main/res/drawable/ghost_chip_bg.xml" value="0.2135" />
-        <entry key="..\:/Users/gabri/Projects/Personal/Android/pokeApi/feature/pokedex/impl/src/main/res/drawable/ghost_type_item_bg.xml" value="0.1" />
-        <entry key="..\:/Users/gabri/Projects/Personal/Android/pokeApi/feature/pokedex/impl/src/main/res/drawable/grass_chip_bg.xml" value="0.2135" />
-        <entry key="..\:/Users/gabri/Projects/Personal/Android/pokeApi/feature/pokedex/impl/src/main/res/drawable/grass_type_item_bg.xml" value="0.274" />
-        <entry key="..\:/Users/gabri/Projects/Personal/Android/pokeApi/feature/pokedex/impl/src/main/res/drawable/ground_type_item_bg.xml" value="0.1295" />
-        <entry key="..\:/Users/gabri/Projects/Personal/Android/pokeApi/feature/pokedex/impl/src/main/res/drawable/ice_type_item_bg.xml" value="0.1" />
-        <entry key="..\:/Users/gabri/Projects/Personal/Android/pokeApi/feature/pokedex/impl/src/main/res/drawable/normal_chip_bg.xml" value="0.2135" />
-        <entry key="..\:/Users/gabri/Projects/Personal/Android/pokeApi/feature/pokedex/impl/src/main/res/drawable/normal_type_item_bg.xml" value="0.274" />
-        <entry key="..\:/Users/gabri/Projects/Personal/Android/pokeApi/feature/pokedex/impl/src/main/res/drawable/off_poison_type_bg.xml" value="0.274" />
-        <entry key="..\:/Users/gabri/Projects/Personal/Android/pokeApi/feature/pokedex/impl/src/main/res/drawable/off_white_type_bg.xml" value="0.274" />
-        <entry key="..\:/Users/gabri/Projects/Personal/Android/pokeApi/feature/pokedex/impl/src/main/res/drawable/poison_chip_bg.xml" value="0.2135" />
-        <entry key="..\:/Users/gabri/Projects/Personal/Android/pokeApi/feature/pokedex/impl/src/main/res/drawable/poison_type_item_bg.xml" value="0.274" />
-        <entry key="..\:/Users/gabri/Projects/Personal/Android/pokeApi/feature/pokedex/impl/src/main/res/drawable/psychic_chip_bg.xml" value="0.2135" />
-        <entry key="..\:/Users/gabri/Projects/Personal/Android/pokeApi/feature/pokedex/impl/src/main/res/drawable/psychic_type_item_bg.xml" value="0.1" />
-        <entry key="..\:/Users/gabri/Projects/Personal/Android/pokeApi/feature/pokedex/impl/src/main/res/drawable/rock_chip_bg.xml" value="0.2135" />
-        <entry key="..\:/Users/gabri/Projects/Personal/Android/pokeApi/feature/pokedex/impl/src/main/res/drawable/rock_type_item_bg.xml" value="0.1" />
-        <entry key="..\:/Users/gabri/Projects/Personal/Android/pokeApi/feature/pokedex/impl/src/main/res/drawable/steel_chip_bg.xml" value="0.2135" />
-        <entry key="..\:/Users/gabri/Projects/Personal/Android/pokeApi/feature/pokedex/impl/src/main/res/drawable/steel_type.xml" value="0.1" />
-        <entry key="..\:/Users/gabri/Projects/Personal/Android/pokeApi/feature/pokedex/impl/src/main/res/drawable/water_chip_bg.xml" value="0.2135" />
-        <entry key="..\:/Users/gabri/Projects/Personal/Android/pokeApi/feature/pokedex/impl/src/main/res/drawable/water_type_item_bg.xml" value="0.274" />
-        <entry key="..\:/Users/gabri/Projects/Personal/Android/pokeApi/feature/pokedex/impl/src/main/res/font/font.xml" value="0.4010416666666667" />
-        <entry key="..\:/Users/gabri/Projects/Personal/Android/pokeApi/feature/pokedex/impl/src/main/res/layout/fragment_pokedex.xml" value="0.25" />
-        <entry key="..\:/Users/gabri/Projects/Personal/Android/pokeApi/feature/pokedex/impl/src/main/res/layout/fragment_pokedex_pokemon_list_item.xml" value="0.3567708333333333" />
-        <entry key="..\:/Users/gabri/Projects/Personal/Android/pokeApi/feature/pokedex/impl/src/main/res/layout/pokedex_pokemon_list_item.xml" value="0.67" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="feature/pokedex/impl/src/main/res/layout/activity_pokedex.xml" value="0.1" />
       </map>
     </option>
   </component>
