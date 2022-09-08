@@ -3,8 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../../../layout/custom_preview.xml" value="0.13518518518518519" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="design-system/src/main/res/drawable/ic_left_arrow.xml" value="0.175" />
+        <entry key="design-system/src/main/res/layout/toolbar.xml" value="0.375" />
         <entry key="feature/pokedex/impl/src/main/res/layout/activity_pokedex.xml" value="0.1" />
+        <entry key="feature/pokedex/impl/src/main/res/layout/fragment_pokedex.xml" value="0.1" />
       </map>
     </option>
   </component>

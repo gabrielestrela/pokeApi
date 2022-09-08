@@ -8,6 +8,10 @@
         <item name="android:textSize">@dimen/font_32</item>
     </style>
 
+    <style name="PoppinsRegular.H3">
+        <item name="android:textSize">@dimen/font_24</item>
+    </style>
+
     <style name="PoppinsRegular.H4">
         <item name="android:textSize">@dimen/font_18</item>
     </style>

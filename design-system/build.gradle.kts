@@ -14,6 +14,15 @@ android {
         testInstrumentationRunner = ConfigData.testInstrumentationRunner
     }
 
+    buildFeatures {
+        dataBinding = true
+    }
+
+    // do not know how to do this here
+//    sourceSets {
+//        getByName("main").resources.srcDirs("src/main/res-toolbar")
+//    }
+
     buildTypes {
         getByName("release") {
             isMinifyEnabled = false

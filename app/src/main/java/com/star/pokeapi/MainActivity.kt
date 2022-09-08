@@ -7,6 +7,7 @@ import com.star.navigation.constants.Transition
 import com.star.navigation.core.Navigator
 import com.star.pokeapi.databinding.ActivityMainBinding
 import com.star.pokedex.di.POKEDEX_NAV
+import com.star.pokedex.presentation.PokedexActivity
 import org.koin.android.ext.android.inject
 import org.koin.core.qualifier.named
 
@@ -20,7 +21,8 @@ class MainActivity : AppCompatActivity() {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         pokedexNavigator.navigateToActivity(
             from = this,
-            transition = Transition.FADE
+            to = PokedexActivity(),
+            transition = Transition.SLIDE
         )
     }
 }

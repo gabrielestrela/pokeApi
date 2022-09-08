@@ -4,6 +4,7 @@ import android.app.Activity
 import android.content.ActivityNotFoundException
 import android.content.Context
 import android.content.Intent
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import com.star.common_android.tools.runIfDebug
 import com.star.navigation.constants.Transition
@@ -11,9 +12,6 @@ import com.star.navigation.core.Navigator
 import com.star.navigation.extensions.addTransition
 import com.star.navigation.extensions.shouldAddToBackStack
 import com.star.navigation.model.NavigationResult
-import com.star.pokedex.impl.R
-import com.star.pokedex.presentation.PokedexActivity
-import com.star.pokedex.presentation.fragment.PokedexFragment
 import timber.log.Timber
 import java.lang.IllegalArgumentException
 
@@ -22,25 +20,25 @@ class PokedexNavigator(
 ) : Navigator {
     override fun navigateToActivity(
         from: Activity,
+        to: Activity,
         transition: Transition
     ): NavigationResult = try {
         from.startActivity(
             Intent(
                 from.applicationContext,
-                PokedexActivity::class.java,
+                to::class.java,
             )
-        ).also {
-            when (transition) {
-                Transition.NONE -> {}
-                Transition.FADE -> from.overridePendingTransition(
-                    android.R.anim.fade_in,
-                    android.R.anim.fade_out,
-                )
-                Transition.SLIDE -> from.overridePendingTransition(
-                    android.R.anim.slide_in_left,
-                    android.R.anim.slide_out_right
-                )
-            }
+        )
+        when (transition) {
+            Transition.NONE -> {}
+            Transition.FADE -> from.overridePendingTransition(
+                android.R.anim.fade_in,
+                android.R.anim.fade_out,
+            )
+            Transition.SLIDE -> from.overridePendingTransition(
+                android.R.anim.slide_in_left,
+                android.R.anim.slide_out_right
+            )
         }
         NavigationResult.Success
     } catch (e: ActivityNotFoundException) {
@@ -50,15 +48,17 @@ class PokedexNavigator(
     }
 
     override fun navigateToFragment(
-        activity: FragmentActivity,
+        from: FragmentActivity,
+        to: Fragment,
+        containerId: Int,
         addToBackStack: Boolean,
         transition: Transition
     ): NavigationResult = try {
-        activity.supportFragmentManager
+        from.supportFragmentManager
             .beginTransaction()
             .addTransition(transition)
             .shouldAddToBackStack(addToBackStack, POKEDEX_BACK_STACK)
-            .replace(R.id.pokedex_fragment_container, PokedexFragment::class.java, null)
+            .replace(containerId, to)
             .commit()
         NavigationResult.Success
     } catch (e: IllegalArgumentException) {

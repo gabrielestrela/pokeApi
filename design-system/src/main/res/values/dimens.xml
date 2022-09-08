@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="margin_3">3dp</dimen>
     <dimen name="margin_6">6dp</dimen>
     <dimen name="margin_12">12dp</dimen>
     <dimen name="margin_24">24dp</dimen>
@@ -14,6 +15,7 @@
     <dimen name="size_50">50dp</dimen>
     <dimen name="size_55">55dp</dimen>
     <dimen name="size_64">64dp</dimen>
+    <dimen name="size_72">72dp</dimen>
     <dimen name="size_128">128dp</dimen>
 
     <dimen name="radius_10">10dp</dimen>
