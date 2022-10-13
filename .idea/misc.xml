@@ -4,6 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../../../../../layout/custom_preview.xml" value="0.13518518518518519" />
+        <entry key="..\:/Users/gabri/Projects/Personal/Android/pokeApi/feature/pokedex/impl/src/main/res/drawable/fire_type_item_bg.xml" value="0.1" />
+        <entry key="..\:/Users/gabri/Projects/Personal/Android/pokeApi/feature/pokedex/impl/src/main/res/layout/fragment_pokedex.xml" value="0.11296296296296296" />
+        <entry key="..\:/Users/gabri/Projects/Personal/Android/pokeApi/feature/pokedex/impl/src/main/res/layout/pokedex_pokemon_list_item.xml" value="0.3730886850152905" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="design-system/src/main/res/drawable/ic_left_arrow.xml" value="0.175" />
         <entry key="design-system/src/main/res/layout/toolbar.xml" value="0.375" />

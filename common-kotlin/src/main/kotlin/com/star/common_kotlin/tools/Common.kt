@@ -4,4 +4,6 @@ fun String.Companion.empty(): String = ""
 
 fun Int.Companion.zero(): Int = 0
 
-fun doNothing() { /* Do Nothing */ }
+inline fun <T> T?.whenNull(block: () -> Unit) {
+    if (this == null) block()
+}

@@ -1,6 +1,6 @@
 package com.star.common_kotlin.model
 
-enum class PokemonType(val type: String) {
+enum class PokemonType(val text: String) {
     GRASS("grass"),
     FIRE("fire"),
     NORMAL("normal"),
@@ -27,7 +27,7 @@ enum class PokemonType(val type: String) {
             defaultValue: PokemonType = NONE
         ): PokemonType =
             values().find {
-                it.type.lowercase() == type.lowercase()
+                it.text.lowercase() == type.lowercase()
             } ?: defaultValue
     }
 }
